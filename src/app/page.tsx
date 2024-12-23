@@ -10,8 +10,8 @@ export default function Home() {
       </button> */}
       <div></div>
 
-      <p className="text-9xl text-left font-semibold">I'm {aboutMe.name}</p>
-      <p className="text-2xl text-gray-500 p-3 text-center">
+      <p className="xl:text-9xl md:text-7xl text-4xl text-left font-semibold">I'm {aboutMe.name}</p>
+      <p className="xl:text-3xl md:text-2xl text-xl text-gray-500 p-3 text-center">
         A passionate Full-Stack <span className="text-orange-500">&lt;Developer/&gt;</span> with 4+ years of experience.
       </p>
     </div>
