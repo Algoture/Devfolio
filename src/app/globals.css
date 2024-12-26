@@ -4,6 +4,7 @@
 
 :root {
   --background: #fcfcfc;
+  --background2: #f5f5f7;
   --foreground: #363636;
 }
 
@@ -20,9 +21,12 @@ body {
   font-family: "Inter", Helvetica, sans-serif;
 }
 
-.center{
+.cen {
   @apply flex items-center justify-center;
 }
-.btn{
-  @apply gap-2 py-1 px-3 shadow-sh center rounded-md ;
+.btn {
+  @apply gap-2 py-1 px-3 shadow-sh cen rounded-md;
+}
+.gridDiv{
+  @apply shadow-sh size-10 rounded-lg bg-slate-800;
 }
