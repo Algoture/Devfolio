@@ -13,6 +13,7 @@ export default function Home() {
         className="rounded-full object-cover bg-orange-400 size-52"
         alt="joe"
       />
+      {/* <Image src="/RoleMaster.png" alt="rolemaster" className="shadow-xl rounded-xl" width={500} height={150}/> */}
       <p className="xl:text-9xl md:text-7xl text-4xl text-left font-semibold">
         I'm {aboutMe.name}
       </p>
