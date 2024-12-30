@@ -6,6 +6,7 @@
   --background: #fcfcfc;
   --background2: #f5f5f7;
   --foreground: #363636;
+  --accent: #14591d;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,7 +18,7 @@
 
 body {
   color: var(--foreground);
-  background: var(--background);
+  background: var(--background2);
   font-family: "Inter", Helvetica, sans-serif;
 }
 
@@ -25,8 +26,16 @@ body {
   @apply flex items-center justify-center;
 }
 .btn {
-  @apply gap-2 py-1 px-3 shadow-sh cen rounded-md;
+  @apply gap-2 py-1 px-3 dark:bg-white cen rounded-md shadow-sh  focus:outline-none;
 }
-.gridDiv{
+.gridDiv {
   @apply shadow-sh size-10 rounded-lg bg-slate-800;
+}
+.txt {
+  letter-spacing: -7px;
+}
+@media (max-width: 768px) {
+  .txt {
+    letter-spacing: -1px;
+  }
 }
