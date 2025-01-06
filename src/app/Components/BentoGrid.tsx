@@ -24,7 +24,7 @@ const BentoGrid: React.FC = () => {
           <div
             key={i}
             className={clsx(
-              "bg-accent p-4 text-white bg-orange-400 rounded-xl flex flex-col items-center justify-center",
+              "bg-accent p-4 text-white rounded-xl flex flex-col items-center justify-center",
               i == 1 ? "col-span-2" : "",
               i == 4 || i == 2 ? "row-span-2" : ""
             )}

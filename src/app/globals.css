@@ -26,16 +26,27 @@ body {
   @apply flex items-center justify-center;
 }
 .btn {
-  @apply gap-2 py-1 px-3 dark:bg-white cen rounded-md shadow-sh  focus:outline-none;
+  @apply gap-2 py-1 px-3 dark:bg-white bg-gray-800 dark:text-black text-gray-200 cen rounded-md shadow-sh  focus:outline-none;
 }
 .gridDiv {
   @apply shadow-sh size-10 rounded-lg bg-slate-800;
 }
 .txt {
-  letter-spacing: -7px;
+  letter-spacing: 1px;
 }
+.skillsbtn {
+  @apply px-2 py-1 text-sm dark:bg-white dark:text-black cen rounded-md shadow-sh focus:outline-none;
+}
+
 @media (max-width: 768px) {
   .txt {
     letter-spacing: -1px;
   }
+}
+.bo{
+  border: 1.5px solid red;
+}
+a:hover{
+  transform: rotate(180deg);
+  transition: all .5s ease ;
 }
