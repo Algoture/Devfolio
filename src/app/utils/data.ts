@@ -1,3 +1,5 @@
+import { skills } from "./types";
+
 export const aboutMe = {
   name: "Umesh Nagare",
   description:
@@ -21,12 +23,12 @@ export const projects = [
     github: "https://github.com/alexjohnson/shopease",
   },
 ];
-export const skills = {
-  languages: ["JavaScript", "TypeScript", "Python"],
-  frontend: ["React", "Next.js", "Tailwind CSS"],
-  backend: ["Node.js", "Express", "GraphQL"],
-  tools: ["Docker", "Git", "Jenkins"],
-};
+// export const skills = {
+//   languages: ["JavaScript", "TypeScript", "Python"],
+//   frontend: ["React", "Next.js", "Tailwind CSS"],
+//   backend: ["Node.js", "Express", "GraphQL"],
+//   tools: ["Docker", "Git", "Jenkins"],
+// };
 export const experience = [
   {
     title: "Software Engineer",
@@ -62,5 +64,79 @@ export const education = [
     certification: "Certified JavaScript Developer",
     provider: "CodeCamp",
     year: 2020,
+  },
+];
+export const skill: skills[] = [
+  {
+    id: 1,
+    skill: "Docker",
+  },
+  {
+    id: 2,
+    skill: "React JS",
+  },
+  {
+    id: 3,
+    skill: "Next JS",
+  },
+  {
+    id: 4,
+    skill: "AWS",
+  },
+  {
+    id: 5,
+    skill: "TypeScript",
+  },
+  {
+    id: 6,
+    skill: "Golang",
+  },
+  {
+    id: 7,
+    skill: "React Native",
+  },
+  {
+    id: 8,
+    skill: "Node JS",
+  },
+  {
+    id: 9,
+    skill: "Express JS",
+  },
+  {
+    id: 10,
+    skill: "MongoDB",
+  },
+  {
+    id: 11,
+    skill: "SQL",
+  },
+  {
+    id: 12,
+    skill: "GraphQL",
+  },
+  {
+    id: 13,
+    skill: "PostgreSQL",
+  },
+  {
+    id: 14,
+    skill: "Redis",
+  },
+  {
+    id: 15,
+    skill: "Java",
+  },
+  {
+    id: 16,
+    skill: "Kafka",
+  },
+  {
+    id: 17,
+    skill: "Tauri",
+  },
+  {
+    id: 18,
+    skill: "Electron",
   },
 ];

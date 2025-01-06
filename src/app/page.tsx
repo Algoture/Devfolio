@@ -1,39 +1,37 @@
 "use client";
 import Image from "next/image";
-import { aboutMe } from "@/app/utils/Data";
+import { aboutMe } from "@/app/utils/data";
 import { buttons } from "./utils/Socials";
 import BentoGrid from "./Components/BentoGrid";
 import localFont from "next/font/local";
-import { MoonIcon, SunIcon } from "./Components/Icons";
-import { useState } from "react";
-const myFont = localFont({ src: "./font/Louize.woff2" });
+
+import Nav from "./Components/Nav";
+import Skills from "./Components/Skills";
 export default function Home() {
-  const [dark, setDark] = useState<boolean>(false);
-  const darkModeHandler = () => {
-    setDark(!dark);
-    document.body.classList.toggle("dark");
-  };
   return (
-    <div className="w-full h-dvh dark:bg-foreground cen flex-col">
-      {/* <Image
-        src="/Joe.png"
-        width={200}
-        height={150}
-        className="rounded object-cover size-52"
-        alt="joe"
-      /> */}
-      {/* <Image src="/RoleMaster.png" alt="rolemaster" className="shadow-xl rounded-xl" width={500} height={150}/> */}
-      <p
-        className={`md:text-9xl sm:text-7xl text-5xl txt text-black dark:text-background text-center ${myFont.className}`}
-      >
-        I'm {aboutMe.name}
-      </p>
-      <p className="xl:text-3xl md:text-3xl text-xl dark:text-gray-300 text-gray-500 p-3 text-center">
-        A passionate Full-Stack{" "}
-        <span className="text-darkaccent dark:text-accent">&lt;Developer/&gt;</span> with 4+
-        years of experience.
-      </p>
-      <div className="cen md:flex-row flex-wrap gap-2 p-2   rounded-lg">
+    <div className="w-full h-dvh cen bg-background2 dark:bg-foreground flex-col">
+      <div className="flex flex-col ">
+        <div className="flex md:flex-row flex-col-reverse items-center md:text-left text-center md:mt-20 gap-2 p-2">
+          <div>
+            <p
+              className={`md:text-5xl text-4xl txt text-black dark:text-background font-bold`}
+            >
+              I'm {aboutMe.name}
+            </p>
+            <p className="xl:text-xl md:text-xl text-xl dark:text-gray-300 text-gray-700">
+              A Developer who loves building things for the web.
+            </p>
+          </div>
+          <Image
+            src="/Umesh2.jpg"
+            width={40}
+            height={50}
+            className="rounded-md shadow-sh md:size-20 size-28 object-cover"
+            alt="joe"
+          />
+        </div>
+      </div>
+      {/* <div className="cen md:flex-row flex-wrap gap-2 p-2   rounded-lg">
         {buttons.map(({ name, icon }, i) => {
           return (
             <button key={i} className="btn">
@@ -42,15 +40,11 @@ export default function Home() {
             </button>
           );
         })}
-      </div>
-      <button
-        onClick={() => darkModeHandler()}
-        className="dark:bg-accent bg-darkaccent cen transition-all dark:text-background absolute right-8 top-8 p-2 rounded-full focus:outline-none"
-      >
-        {dark && <SunIcon width={24} height={24} />}
-        {!dark && <MoonIcon width={24} height={24} />}
-      </button>
+      </div> */}
+
       {/* <BentoGrid /> */}
+      <Nav />
+      <Skills />
     </div>
   );
 }

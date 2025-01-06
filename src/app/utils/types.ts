@@ -9,3 +9,8 @@ export type ButtonData = {
   name: string;
   icon: JSX.Element;
 };
+
+export type skills = {
+  id: number;
+  skill: string;
+};
