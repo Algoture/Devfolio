@@ -1,21 +1,26 @@
 "use client";
 import Image from "next/image";
-import { aboutMe } from "@/app/utils/data";
+import { aboutMe, transition, variants } from "@/app/utils/data";
 import { buttons } from "./utils/Socials";
 import BentoGrid from "./Components/BentoGrid";
-import localFont from "next/font/local";
 
 import Nav from "./Components/Nav";
 import Skills from "./Components/Skills";
+import { motion } from "framer-motion";
 export default function Home() {
   return (
     <div className="w-full h-dvh cen bg-background2 dark:bg-foreground flex-col">
-      <div className="flex flex-col ">
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        animate="visible"
+        variants={variants}
+        transition={transition}
+        className="flex flex-col ">
         <div className="flex md:flex-row flex-col-reverse items-center md:text-left text-center md:mt-20 gap-2 p-2">
           <div>
             <p
-              className={`md:text-5xl text-4xl txt text-black dark:text-background font-bold`}
-            >
+              className={`md:text-5xl text-4xl txt text-black dark:text-background font-bold`}>
               I'm {aboutMe.name}
             </p>
             <p className="xl:text-xl md:text-xl text-xl dark:text-gray-300 text-gray-700">
@@ -30,7 +35,7 @@ export default function Home() {
             alt="joe"
           />
         </div>
-      </div>
+      </motion.div>
       {/* <div className="cen md:flex-row flex-wrap gap-2 p-2   rounded-lg">
         {buttons.map(({ name, icon }, i) => {
           return (
