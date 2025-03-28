@@ -68,16 +68,12 @@ export const education = [
 ];
 export const skill: skills[] = [
   {
-    id: 1,
-    skill: "Docker",
-  },
-  {
     id: 2,
-    skill: "React JS",
+    skill: "React.js",
   },
   {
     id: 3,
-    skill: "Next JS",
+    skill: "Next.js",
   },
   {
     id: 4,
@@ -87,21 +83,18 @@ export const skill: skills[] = [
     id: 5,
     skill: "TypeScript",
   },
-  {
-    id: 6,
-    skill: "Golang",
-  },
+
   {
     id: 7,
     skill: "React Native",
   },
   {
     id: 8,
-    skill: "Node JS",
+    skill: "Node.js",
   },
   {
     id: 9,
-    skill: "Express JS",
+    skill: "Express.js",
   },
   {
     id: 10,
@@ -113,31 +106,7 @@ export const skill: skills[] = [
   },
   {
     id: 12,
-    skill: "GraphQL",
-  },
-  {
-    id: 13,
     skill: "PostgreSQL",
-  },
-  {
-    id: 14,
-    skill: "Redis",
-  },
-  {
-    id: 15,
-    skill: "Java",
-  },
-  {
-    id: 16,
-    skill: "Kafka",
-  },
-  {
-    id: 17,
-    skill: "Tauri",
-  },
-  {
-    id: 18,
-    skill: "Electron",
   },
 ];
 export const transition = { duration: 1, ease: [0.25, 0.1, 0.25, 1] };

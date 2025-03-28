@@ -36,18 +36,7 @@ export default function Home() {
           />
         </div>
       </motion.div>
-      {/* <div className="cen md:flex-row flex-wrap gap-2 p-2   rounded-lg">
-        {buttons.map(({ name, icon }, i) => {
-          return (
-            <button key={i} className="btn">
-              {icon}
-              {name}
-            </button>
-          );
-        })}
-      </div> */}
 
-      {/* <BentoGrid /> */}
       <Nav />
       <Skills />
     </div>

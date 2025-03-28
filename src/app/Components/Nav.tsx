@@ -10,6 +10,7 @@ import {
   TwitterIcon,
 } from "./Icons";
 import clsx from "clsx";
+import { buttons } from "../utils/Socials";
 
 const Nav = () => {
   const [dark, setDark] = useState<boolean>(false);
@@ -20,18 +21,13 @@ const Nav = () => {
   return (
     <div className="fixed bottom-2 right-1/2 transform translate-x-1/2">
       <nav className="flex px-4 py-3 gap-4  rounded-full bg-white shadow-sh">
-        <Link href="https://github.com/Algoture/PortFolio">
-          <GitHubIcon width={25} height={25} />
-        </Link>
-        <Link href="https://github.com/Algoture/PortFolio">
-          <InstaIcon width={25} height={25} />
-        </Link>
-        <Link href="https://github.com/Algoture/PortFolio">
-          <TwitterIcon width={25} height={25} />
-        </Link>
-        <Link href="https://github.com/Algoture/PortFolio">
-          <DiscordIcon width={25} height={25} />
-        </Link>
+        {buttons.map((data) => {
+          return (
+            <Link key={data.name} href={data.link}>
+              {data.icon}
+            </Link>
+          );
+        })}
 
         <div className="border-l-2 flex items-center pl-2">
           <button
@@ -39,8 +35,7 @@ const Nav = () => {
             className={clsx(
               "cen transition-all rounded-full focus:outline-none",
               dark ? "rotate-0" : "rotate-90"
-            )}
-          >
+            )}>
             {dark && <MoonIcon width={25} height={25} />}
             {!dark && <SunIcon width={25} height={25} />}
           </button>

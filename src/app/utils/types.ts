@@ -8,6 +8,7 @@ export type dimensions = {
 export type ButtonData = {
   name: string;
   icon: JSX.Element;
+  link: string;
 };
 
 export type skills = {
