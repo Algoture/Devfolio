@@ -1,8 +1,6 @@
 "use client";
 import Image from "next/image";
 import { aboutMe, transition, variants } from "@/app/utils/data";
-import { buttons } from "./utils/Socials";
-import BentoGrid from "./Components/BentoGrid";
 
 import Nav from "./Components/Nav";
 import Skills from "./Components/Skills";
