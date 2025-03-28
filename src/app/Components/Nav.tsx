@@ -1,14 +1,7 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
-import {
-  DiscordIcon,
-  GitHubIcon,
-  InstaIcon,
-  MoonIcon,
-  SunIcon,
-  TwitterIcon,
-} from "./Icons";
+import { MoonIcon, SunIcon } from "./Icons";
 import clsx from "clsx";
 import { buttons } from "../utils/Socials";
 
