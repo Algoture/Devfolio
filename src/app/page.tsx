@@ -34,7 +34,6 @@ export default function Home() {
           />
         </div>
       </motion.div>
-
       <Nav />
       <Skills />
     </div>

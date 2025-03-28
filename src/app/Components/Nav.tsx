@@ -20,7 +20,7 @@ const Nav = () => {
   };
   return (
     <div className="fixed bottom-2 right-1/2 transform translate-x-1/2">
-      <nav className="flex px-4 py-3 gap-4  rounded-full bg-white shadow-sh">
+      <nav className="flex px-4 py-3 gap-3  rounded-full bg-white shadow-sh">
         {buttons.map((data) => {
           return (
             <Link key={data.name} href={data.link}>

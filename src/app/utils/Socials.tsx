@@ -3,9 +3,7 @@ import {
   LinkedInIcon,
   InstaIcon,
   TwitterIcon,
-  FacebookIcon,
   DiscordIcon,
-  SlackIcon,
 } from "../Components/Icons";
 import { ButtonData } from "./types";
 
